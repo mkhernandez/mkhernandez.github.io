@@ -1,10 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;700&family=Poppins:wght@300;400;500;700&display=swap');
 
-* {
+/* reset */
+*, a {
     margin: 0;
     padding: 0;
+    text-decoration: none;
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
+}
+
+li {
+    list-style-type: none;
 }
 
 h1 {
@@ -13,13 +19,15 @@ h1 {
 }
 
 /* variables */
-
-
-/* reset */
-
+:root {
+    --primary: hsl(43, 100%, 61%);
+    --secondary: hsl(239, 80%, 20%);
+}
 
 /* base styles */
-
+body {
+    
+}
 
 /* fonts */
 
@@ -39,5 +47,5 @@ h1 {
 
 /* desktop styles */
 @media screen and (min-width: 1200px) {
-    
+
 }
