@@ -1,4 +1,30 @@
+/* fonts */
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;700&family=Poppins:wght@300;400;500;700&display=swap');
+
+h1, h2, h3, h4 {
+    color: hsla(243, 100%, 93%, 1);
+    font-weight: normal;
+}
+
+p, a, li {
+    color: hsla(244, 47%, 71%, 1);
+}
+
+h1, h3 {
+    font-size: 1.2em;
+}
+
+h2 {
+    font-size: 1.6em;
+}
+
+h4 {
+    font-size: 1.1em;
+}
+
+.leading {
+    font-size: 1.1em;
+}
 
 /* reset */
 *, a {
@@ -11,11 +37,6 @@
 
 li {
     list-style-type: none;
-}
-
-h1 {
-    font-size: 30px;
-    font-weight: 700;
 }
 
 /* variables */
@@ -73,9 +94,6 @@ input:focus,textarea:focus {
     color: var(--mint);
 }
 
-/* fonts */
-
-
 /* mobile styles */
 
 
@@ -86,10 +104,14 @@ input:focus,textarea:focus {
 
 /* large tablets and laptops styles */
 @media screen and (min-width: 960px) {
-    
+    body {
+        font-size: 20px;
+    }
 }
 
 /* desktop styles */
 @media screen and (min-width: 1200px) {
-
+    body {
+        font-size: 22px;
+    }
 }
