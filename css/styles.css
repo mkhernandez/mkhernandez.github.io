@@ -45,6 +45,7 @@ li {
     --secondary: hsl(239, 80%, 20%);
     --redish: hsl(345, 84%, 58%);
     --mint: hsla(176, 65%, 79%, 1);
+    --jigglypuff: hsla(208, 100%, 84%, 1);
 }
 
 /* base styles */
@@ -98,6 +99,7 @@ input:focus,textarea:focus {
 .grid {
     display: grid;
     grid-template-columns: repeat(8, 1fr);
+    gap: 10px;
 }
 
 .site-nav {
@@ -136,6 +138,58 @@ input:focus,textarea:focus {
     width: 200%;
 }
 
+/* welcome text button has a margin of 20px 0; */
+
+#portfolio h3 {
+    margin-bottom: 0;
+    text-align: center;
+}
+
+.projects a {
+    grid-column: 1/9;
+    margin: 20px 0;
+    display: flex;
+}
+
+.projects a * {
+    margin: 0 20px;
+    max-width: 40%;
+    /* align-self will take what's inside and align it to what is specified */
+    /* similar to justify-content */
+    align-self: center;   
+}
+
+.projects h4 {
+    color: var(--jigglypuff);
+}
+
+#skills {
+    padding: 30px 20px;
+}
+
+#skills h3 {
+    text-align: center;
+}
+
+#skills ul {
+    margin: 40px 0;
+    border: 1px solid var(--redish);
+}
+
+#skills h4 {
+    color: var(--jigglypuff);
+}
+
+#skills li {
+    padding: 10px;
+    grid-column: span 4;
+    text-align: center;
+}
+
+#skills img {
+    height: 80px;
+    margin: 10px auto;
+}
 
 /* small table styles */
 @media screen and (min-width: 620px) {
