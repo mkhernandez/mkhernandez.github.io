@@ -173,7 +173,7 @@ input:focus,textarea:focus {
 
 #skills ul {
     margin: 40px 0;
-    border: 1px solid var(--redish);
+    background-color: hsla(0, 0%, 0%, 0.3);
 }
 
 #skills h4 {
@@ -235,9 +235,13 @@ footer .social {
 }
 
 footer .attribution {
-    grid-column: 3/8;
+    grid-column: 1/5;
     grid-row: 2;
-    color: var(--jigglypuff);
+}
+
+footer .comet-attribution {
+    grid-column: 5/9;
+    grid-row: 2;
 }
 
 footer li {
